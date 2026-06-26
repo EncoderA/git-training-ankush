@@ -1,0 +1,165 @@
+:root {
+    color-scheme: light;
+    --background: #f7f8fb;
+    --surface: #ffffff;
+    --text: #1f2937;
+    --muted: #64748b;
+    --primary: #2563eb;
+    --accent: #16a34a;
+    --border: #dbe3ef;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.site-header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+}
+
+.navbar {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.logo {
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a.active {
+    color: var(--text);
+    font-weight: 700;
+}
+
+.hero,
+.page-hero,
+.content-section {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+}
+
+.hero {
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+.hero h1,
+.page-hero h1 {
+    font-size: clamp(2rem, 6vw, 4rem);
+    margin-bottom: 1rem;
+}
+
+.hero-sub,
+.page-hero p {
+    color: var(--muted);
+    font-size: 1.1rem;
+}
+
+.btn-primary,
+.btn-submit {
+    display: inline-block;
+    border: 0;
+    border-radius: 6px;
+    background: var(--primary);
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 0.75rem 1rem;
+}
+
+.btn-primary:hover,
+.btn-submit:hover {
+    text-decoration: none;
+    filter: brightness(0.95);
+}
+
+.features {
+    max-width: 960px;
+    margin: 0 auto 3rem;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.25rem;
+}
+
+.content-section {
+    padding-top: 1rem;
+}
+
+.content-section ul {
+    padding-left: 1.25rem;
+}
+
+.contact-form {
+    display: grid;
+    gap: 1rem;
+    max-width: 640px;
+}
+
+.form-group {
+    display: grid;
+    gap: 0.35rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font: inherit;
+    padding: 0.75rem;
+}
+
+.site-footer {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    text-align: center;
+    color: var(--muted);
+    border-top: 1px solid var(--border);
+    background: var(--surface);
+}

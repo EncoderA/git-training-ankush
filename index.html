@@ -5,25 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Git Training Project - a hands-on Git workflow assignment.">
     <title>Git Training | Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <strong>GitFlow Demo</strong>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="logo">GitFlow Demo</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <section>
+        <section class="hero">
             <h1>Welcome to Git Training</h1>
-            <p>Practice version control with commits, branches, pull requests, and merge conflicts.</p>
+            <p class="hero-sub">Practice version control with commits, branches, pull requests, and merge conflicts.</p>
+            <a class="btn-primary" href="about.html">View Workflow</a>
+        </section>
+
+        <section class="features">
+            <article class="card">
+                <h3>Feature Branches</h3>
+                <p>Keep each page or change isolated until it is ready to merge.</p>
+            </article>
+            <article class="card">
+                <h3>Pull Requests</h3>
+                <p>Review changes on GitHub before bringing them into main.</p>
+            </article>
+            <article class="card">
+                <h3>Conflict Resolution</h3>
+                <p>Practice choosing the final content when two branches edit the same line.</p>
+            </article>
         </section>
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <p>&copy; 2026 Git Training Project.</p>
     </footer>
 </body>
